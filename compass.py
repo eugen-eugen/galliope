@@ -57,10 +57,4 @@ def on_forever():
     basic.pause(100)
 basic.forever(on_forever)
 
-# Wenn Knopf A gedrückt wird, Gradwert anzeigen
-# Kurze Pause, damit der Wert lesbar ist
 
-def on_button_pressed_a():
-    basic.show_number(input.compass_heading())
-    basic.pause(1000)
-input.on_button_pressed(Button.A, on_button_pressed_a)
